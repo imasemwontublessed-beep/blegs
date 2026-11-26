@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo Prodotti - Blessed</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #eeeeee;
+            padding-bottom: 5px;
+        }
+
+        .contenitore-tabella {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            font-size: 0.95em;
+        }
+
+        th, td {
+            border: 1px solid #cccccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #eeeeee;
+            color: #2c3e50;
+        }
+
+        .numero {
+            text-align: right;
+            white-space: nowrap;
+        }
+
+        .evidenziato {
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Blessed</h1>
+        <p>Catalogo Prodotti e Scheda Magazzino</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#chi-siamo">Chi Siamo</a>
+        <a href="catalogo.html">Catalogo Prodotti</a>
+        <a href="index.html#vendita">Modalità di Vendita</a>
+        <a href="index.html#contatti">Contatti</a>
+    </nav>
+
+    <main>
+        <section id="elenco-prodotti">
+            <h2>Catalogo Prodotti</h2>
+            <p>Di seguito è riportata la tabella completa degli articoli disponibili, comprensiva di prezzi d'acquisto, prezzi di vendita, giacenze e margini commerciali.</p>
+            
+            <div class="contenitore-tabella">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Codice</th>
+                            <th>Prodotto</th>
+                            <th>Categoria</th>
+                            <th class="numero">Costo Unitario</th>
+                            <th class="numero">Prezzo Vendita</th>
+                            <th class="numero">Quantità</th>
+                            <th class="numero">Margine Unitario</th>
+                            <th class="numero">Margine %</th>
+                            <th class="numero">Valore Giacenza</th>
+                            <th class="numero">Totale Costo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HBUGYF</td>
+                            <td>Canottiera</td>
+                            <td>Abbigliamento</td>
+                            <td class="numero">€ 3,00</td>
+                            <td class="numero evidenziato">€ 6,00</td>
+                            <td class="numero">9</td>
+                            <td class="numero">€ 3,00</td>
+                            <td class="numero">50,00%</td>
+                            <td class="numero">€ 27,00</td>
+                            <td class="numero">€ 27,00</td>
+                        </tr>
+                        <tr>
+                            <td>RS 98</td>
+                            <td>Felpa</td>
+                            <td>Abbigliamento</td>
+                            <td class="numero">€ 10,00</td>
+                            <td class="numero evidenziato">€ 20,00</td>
+                            <td class="numero">5</td>
+                            <td class="numero">€ 10,00</td>
+                            <td class="numero">50,00%</td>
+                            <td class="numero">€ 50,00</td>
+                            <td class="numero">€ 50,00</td>
+                        </tr>
+                        <tr>
+                            <td>GR7K</td>
+                            <td>Giubbotto</td>
+                            <td>Abbigliamento</td>
+                            <td class="numero">€ 35,00</td>
+                            <td class="numero evidenziato">€ 120,00</td>
+                            <td class="numero">10</td>
+                            <td class="numero">€ 85,00</td>
+                            <td class="numero">70,83%</td>
+                            <td class="numero">€ 350,00</td>
+                            <td class="numero">€ 350,00</td>
+                        </tr>
+                        <tr>
+                            <td>UGHED</td>
+                            <td>Maglietta</td>
+                            <td>Abbigliamento</td>
+                            <td class="numero">€ 8,00</td>
+                            <td class="numero evidenziato">€ 21,00</td>
+                            <td class="numero">17</td>
+                            <td class="numero">€ 13,00</td>
+                            <td class="numero">61,90%</td>
+                            <td class="numero">€ 136,00</td>
+                            <td class="numero">€ 136,00</td>
+                        </tr>
+                        <tr>
+                            <td>SM 59100</td>
+                            <td>Maglione</td>
+                            <td>Abbigliamento</td>
+                            <td class="numero">€ 5,00</td>
+                            <td class="numero evidenziato">€ 25,99</td>
+                            <td class="numero">15</td>
+                            <td class="numero">€ 20,99</td>
+                            <td class="numero">80,76%</td>
+                            <td class="numero">€ 75,00</td>
+                            <td class="numero">€ 75,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Blessed - Settore Tessile | Tutti i diritti riservati</p>
+    </footer>
+
+</body>
+</html>
